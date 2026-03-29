@@ -58,12 +58,12 @@ export default function Home() {
               <div className="p-4 p-md-5 rounded-4 border border-secondary h-100" style={{ backgroundColor: "#141b33" }}>
                 <h3 className="fs-4 text-success border-bottom border-secondary pb-3 mb-4">Hard Skills</h3>
                 <ul className="list-unstyled text-secondary fs-5 m-0 p-0">
-                  <li className="mb-3">▹ Blender (Modeling & Texturing)</li>
-                  <li className="mb-3">▹ Figma (UI/UX Design)</li>
-                  <li className="mb-3">▹ Adobe Photoshop</li>
-                  <li className="mb-3">▹ Adobe After Effects</li>
-                  <li className="mb-3">▹ DaVinci Resolve</li>
-                  <li className="mb-3">▹ Adobe Premiere Pro</li>
+                  <li className="mb-3"><span className="text-success">▹</span> Blender (Modeling & Texturing)</li>
+                  <li className="mb-3"><span className="text-success">▹</span> Figma (UI/UX Design)</li>
+                  <li className="mb-3"><span className="text-success">▹</span> Adobe Photoshop</li>
+                  <li className="mb-3"><span className="text-success">▹</span> Adobe After Effects</li>
+                  <li className="mb-3"><span className="text-success">▹</span> DaVinci Resolve</li>
+                  <li className="mb-3"><span className="text-success">▹</span> Adobe Premiere Pro</li>
                 </ul>
               </div>
             </div>
@@ -72,10 +72,10 @@ export default function Home() {
               <div className="p-4 p-md-5 rounded-4 border border-secondary h-100" style={{ backgroundColor: "#141b33" }}>
                 <h3 className="fs-4 text-success border-bottom border-secondary pb-3 mb-4">Soft Skills</h3>
                 <ul className="list-unstyled text-secondary fs-5 m-0 p-0">
-                  <li className="mb-3">▹ Problem Solving</li>
-                  <li className="mb-3">▹ Manajemen Waktu</li>
-                  <li className="mb-3">▹ Kerja Tim</li>
-                  <li className="mb-3">▹ Komunikasi Visual</li>
+                  <li className="mb-3"><span className="text-success">▹</span> Problem Solving</li>
+                  <li className="mb-3"><span className="text-success">▹</span> Manajemen Waktu</li>
+                  <li className="mb-3"><span className="text-success">▹</span> Kerja Tim</li>
+                  <li className="mb-3"><span className="text-success">▹</span> Komunikasi Visual</li>
                 </ul>
               </div>
             </div>
