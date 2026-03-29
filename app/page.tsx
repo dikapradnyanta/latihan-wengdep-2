@@ -1,65 +1,123 @@
 import Image from "next/image";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="text-white min-vh-100" style={{ backgroundColor: "#0a1128" }}>
+      {/* NAVBAR */}
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top border-bottom border-secondary" style={{ backgroundColor: "rgba(10, 17, 40, 0.9)", backdropFilter: "blur(10px)" }}>
+        <div className="container py-2">
+          <a className="navbar-brand fw-bold fs-4" href="#">Dika<span className="text-success">.</span></a>
+          <ul className="navbar-nav ms-auto flex-row gap-4">
+            <li className="nav-item"><a className="nav-link text-light" href="#about">About Me</a></li>
+            <li className="nav-item"><a className="nav-link text-light" href="#skills">Skills</a></li>
+            <li className="nav-item"><a className="nav-link text-light" href="#experience">Experience</a></li>
+          </ul>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </nav>
+
+      {/* HERO / ABOUT */}
+      <section id="about" className="d-flex align-items-center min-vh-100 pt-5" style={{ background: "radial-gradient(circle at top left, rgba(34, 197, 94, 0.05), transparent 50%)" }}>
+        <div className="container py-5 mt-5">
+          <div className="row align-items-center flex-column-reverse flex-md-row">
+            <div className="col-md-7 mt-5 mt-md-0 text-center text-md-start">
+              <p className="text-success fw-bold text-uppercase tracking-wide mb-2" style={{ letterSpacing: "2px" }}>Hello, I am</p>
+              <h1 className="display-4 fw-bold mb-3 text-white">I Komang Dika Pradnyanta</h1>
+              <p className="fs-4 text-success fw-medium mb-4">3D Artist (Low Poly Game Asset)</p>
+
+              <p className="text-secondary fs-5 mb-5 mx-auto mx-md-0" style={{ maxWidth: "600px" }}>
+                Saya adalah 3D Artist yang fokus pada modeling & texturing asset low-poly untuk game.
+                Saat ini magang di Palm Studio dan aktif di bidang desain serta multimedia.
+              </p>
+
+              <div className="d-flex gap-3 justify-content-center justify-content-md-start">
+                <a href="https://github.com/dikapradnyanta" target="_blank" className="btn btn-success px-4 py-2 fw-bold" rel="noreferrer">GitHub</a>
+                <a href="https://www.instagram.com/dika.pradnyanta/" target="_blank" className="btn btn-outline-success px-4 py-2 fw-bold" rel="noreferrer">Instagram</a>
+              </div>
+            </div>
+
+            <div className="col-md-5 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
+              <div className="position-relative" style={{ width: "100%", maxWidth: "400px", aspectRatio: "4/5" }}>
+                <Image src="/images/profile.png" alt="Foto Dika" fill className="rounded-4 object-fit-cover shadow-lg" style={{ border: "2px solid rgba(255, 255, 255, 0.05)" }} />
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* SKILLS */}
+      <section id="skills" className="py-5" style={{ backgroundColor: "#0f172a" }}>
+        <div className="container py-5 my-md-5">
+          <div className="text-center mb-5 pb-3">
+            <p className="text-success fw-bold mb-2 text-uppercase" style={{ letterSpacing: "2px" }}>MY EXPERTISE</p>
+            <h2 className="display-5 fw-bold text-white">Skills</h2>
+          </div>
+
+          <div className="row g-4 justify-content-center mx-auto" style={{ maxWidth: "1000px" }}>
+            <div className="col-md-6">
+              <div className="p-4 p-md-5 rounded-4 border border-secondary h-100" style={{ backgroundColor: "#141b33" }}>
+                <h3 className="fs-4 text-success border-bottom border-secondary pb-3 mb-4">Hard Skills</h3>
+                <ul className="list-unstyled text-secondary fs-5 m-0 p-0">
+                  <li className="mb-3">▹ Blender (Modeling & Texturing)</li>
+                  <li className="mb-3">▹ Figma (UI/UX Design)</li>
+                  <li className="mb-3">▹ Adobe Photoshop</li>
+                  <li className="mb-3">▹ Adobe After Effects</li>
+                  <li className="mb-3">▹ DaVinci Resolve</li>
+                  <li className="mb-3">▹ Adobe Premiere Pro</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="col-md-6">
+              <div className="p-4 p-md-5 rounded-4 border border-secondary h-100" style={{ backgroundColor: "#141b33" }}>
+                <h3 className="fs-4 text-success border-bottom border-secondary pb-3 mb-4">Soft Skills</h3>
+                <ul className="list-unstyled text-secondary fs-5 m-0 p-0">
+                  <li className="mb-3">▹ Problem Solving</li>
+                  <li className="mb-3">▹ Manajemen Waktu</li>
+                  <li className="mb-3">▹ Kerja Tim</li>
+                  <li className="mb-3">▹ Komunikasi Visual</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* EXPERIENCE */}
+      <section id="experience" className="py-5" style={{ backgroundColor: "#0a1128" }}>
+        <div className="container py-5 my-md-5">
+          <div className="text-center mb-5 pb-3">
+            <p className="text-success fw-bold mb-2 text-uppercase" style={{ letterSpacing: "2px" }}>MY JOURNEY</p>
+            <h2 className="display-5 fw-bold text-white">Pengalaman</h2>
+          </div>
+
+          <div className="row g-4 mx-auto" style={{ maxWidth: "1200px" }}>
+            <div className="col-md-4">
+              <div className="p-4 rounded-4 border border-secondary h-100 shadow-sm" style={{ backgroundColor: "#141b33" }}>
+                <h3 className="fs-5 text-white mb-1">Magang - Palm Studio</h3>
+                <span className="d-block text-success mb-3 fs-6">(2024 - Sekarang)</span>
+                <p className="text-secondary mb-0">Membuat asset 3D low-poly untuk game Roblox menggunakan Blender.</p>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="p-4 rounded-4 border border-secondary h-100 shadow-sm" style={{ backgroundColor: "#141b33" }}>
+                <h3 className="fs-5 text-white mb-1">HIMA Informatika - Divisi Kominfo</h3>
+                <span className="d-block text-success mb-3 fs-6">(2025)</span>
+                <p className="text-secondary mb-0">Membuat lebih dari 30 konten publikasi dan dokumentasi.</p>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="p-4 rounded-4 border border-secondary h-100 shadow-sm" style={{ backgroundColor: "#141b33" }}>
+                <h3 className="fs-5 text-white mb-1">Bali Start Up Camp - Pubdok</h3>
+                <span className="d-block text-success mb-3 fs-6">(2024 dan 2025)</span>
+                <p className="text-secondary mb-0">Bertanggung jawab atas dokumentasi dan publikasi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
